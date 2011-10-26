@@ -93,8 +93,8 @@ makeTagList tag posts =
 
 feedConfiguration :: FeedConfiguration
 feedConfiguration = FeedConfiguration
-    { feedTitle       = "SimpleBlog RSS feed."
-    , feedDescription = "A simple demo of an RSS feed created with Hakyll."
-    , feedAuthorName  = "Jasper Van der Jeugt"
+    { feedTitle       = "gphil's blog"
+    , feedDescription = "gphil's blog RSS Feed"
+    , feedAuthorName  = "Greg Phillips"
     , feedRoot        = "http://example.com"
     }
