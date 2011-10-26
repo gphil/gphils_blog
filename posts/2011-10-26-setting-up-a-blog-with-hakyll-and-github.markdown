@@ -75,7 +75,7 @@ files and build the site using Hakyll. Since everything is statically
 compiled into the site/ directory, you can just turn this into it's
 own git repo (you'll have to add /site to your .gitignore if you want
 to put the rest of the project into git as well) and push it to a
-repository named <your_github_acct>.github.com and [github pages](http://pages.github.com/) will
+repository named "your_github_acct.github.com" and [github pages](http://pages.github.com/) will
 do the rest!
 
 You can check out [my github page](https://github.com/gphil) for the source.
