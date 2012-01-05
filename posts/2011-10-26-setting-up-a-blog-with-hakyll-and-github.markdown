@@ -70,11 +70,11 @@ liking. For the duration of this step, I kept the sample blog posts
 around so I could see how they looked as I changed the templates and
 styles.
 
-As soon as the site is looking good, you can remove any extraneous
-files and build the site using Hakyll. Since everything is statically
-compiled into the site/ directory, you can just turn this into it's
-own git repo (you'll have to add /site to your .gitignore if you want
-to put the rest of the project into git as well) and push it to a
+As soon as the site was looking good, I removed the extraneous
+files from the Hakyll sample blog and build the site using the Hakyll compiler. Since everything is statically
+compiled into the _site/ directory, you can just turn this into it's
+own git repo (you'll have to add "/_site" to your .gitignore if you want
+to put the rest of the project into git as well since that will be it's own repo) and push it to a
 repository named "your_github_acct.github.com" and [github pages](http://pages.github.com/) will
 do the rest!
 
