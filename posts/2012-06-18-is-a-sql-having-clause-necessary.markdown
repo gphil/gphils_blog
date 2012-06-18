@@ -10,23 +10,27 @@ My "proof" of this is that you can always write a subquery using the grouping an
 
 Consider the following example, which selects all the ice cream parlors in cities that have over 5 ice cream parlors:
 
-	SELECT city, state, ice_cream_parlor
-	FROM ice_cream_parlors icps
-	GROUP BY city, state
-	HAVING count(ice_cream_parlor) > 5;
+<pre class="brush: sql">
+SELECT city, state, ice_cream_parlor
+FROM ice_cream_parlors icps
+GROUP BY city, state
+HAVING count(ice_cream_parlor) > 5;
+</pre>
 
 This can be re-written as:
 
-	SELECT icps.city, icps.state, icps.ice_cream_parlor
-	FROM ice_cream_parlors icps
-	INNER JOIN (
-	                SELECT city, state, count(ice_cream_parlor) count
-	                FROM ice_cream_parlors icps
-	                GROUP by city, state
-	           ) sq
-	ON icps.city = sq.city and icps.state = sq.state
-	GROUP BY icps.city, icps.state, icps.ice_cream_parlor
-	WHERE sq.count > 5;
+<pre class="brush: sql">
+SELECT icps.city, icps.state, icps.ice_cream_parlor
+FROM ice_cream_parlors icps
+INNER JOIN (
+                SELECT city, state, count(ice_cream_parlor) icp_count
+                FROM ice_cream_parlors icps
+                GROUP by city, state
+           ) sq
+ON icps.city = sq.city and icps.state = sq.state
+GROUP BY icps.city, icps.state, icps.ice_cream_parlor
+WHERE sq.icp_count > 5;
+</pre>
 
 It seems that all "HAVING" queries could in principle be re-written this way, undermining an explicit need for the "HAVING" clause. However, I think there are some benefits to using the "HAVING" clause, even if you don't necessarily need it to express your query.
 
