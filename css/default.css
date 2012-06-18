@@ -1,7 +1,8 @@
 body {
     width: 600px;
     margin: 0px auto 0px auto;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    text-align: justify;
     color: #222222;
 }
 
