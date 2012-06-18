@@ -25,7 +25,7 @@ This can be re-written as:
 	                GROUP by city, state
 	           ) sq
 	ON icps.city = sq.city and icps.state = sq.state
-  GROUP BY icps.city, icps.state, icps.ice_cream_parlor
+	GROUP BY icps.city, icps.state, icps.ice_cream_parlor
 	WHERE sq.count > 5;
 
 It seems that all "HAVING" queries could in principle be re-written this way, undermining an explicit need for the "HAVING" clause. However, I think there are some benefits to using the "HAVING" clause, even if you don't necessarily need it to express your query.
