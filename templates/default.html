@@ -8,14 +8,10 @@
     <link href="http://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="/css/default.css" />
-    <link rel="stylesheet" type="text/css" href="/css/shCore.css" />
-    <link rel="stylesheet" type="text/css" href="/css/shCoreDefault.css" />
     <link rel="alternate"
           type="application/rss+xml"
           title="gphil's blog"
           href="/rss.xml" />   
-    <script type="text/javascript" src="/js/shCore.js"></script>
-    <script type="text/javascript" src="/js/shBrushSql.js"></script>
   </head>
   <body>
     <h1 class="title">gphil's blog</h1>
@@ -30,19 +26,13 @@
     <br />
     <div class="copyright"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br />This text on this blog is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</div>
     <script type="text/javascript">
-      SyntaxHighlighter.all()
-    </script>
-    <script type="text/javascript">
-      var _gauges = _gauges || [];
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34480958-1']);
+      _gaq.push(['_trackPageview']);
       (function() {
-      var t   = document.createElement('script');
-      t.type  = 'text/javascript';
-      t.async = true;
-      t.id    = 'gauges-tracker';
-      t.setAttribute('data-site-id', '4fdf607f613f5d640900004f');
-      t.src = '//secure.gaug.es/track.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(t, s);
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
   </body>
