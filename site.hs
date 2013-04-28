@@ -31,6 +31,11 @@ main = hakyll $ do
         route idRoute
         compile compressCssCompiler
 
+    -- Compress JS
+    match "js/*" $ do
+        route idRoute
+        compile copyFileCompiler
+
     -- Build tags
     tags <- buildTags "posts/*" (fromCapture "tags/*.html")
 
