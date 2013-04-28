@@ -35,7 +35,7 @@ div.copyright {
 }
 
 div.about {
-    position: fixed;
+    position: absolute;
     left: 30px;
     top: 50px;
     height: 100%;
