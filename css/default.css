@@ -1,4 +1,7 @@
 body {
+    position: absolute;
+    top: 75px;
+    left: 280px;
     width: 600px;
     margin: 0px auto 0px auto;
     font-family: 'Lato', sans-serif;
@@ -11,10 +14,11 @@ a {
     color: #E30000;
 }
 
-h1.title {
+h1.title a {
     color: #999999;
     font-size: 64px;
     font-family: 'Gochi Hand', serif;
+    text-decoration: none;
 }
 
 h3 {
@@ -24,6 +28,15 @@ h3 {
 }
 
 div.copyright {
+    font-size: 12px;
+}
+
+div.about {
+    position: fixed;
+    left: 30px;
+    top: 50px;
+    height: 100%;
+    width: 200px;
     font-size: 12px;
 }
 
