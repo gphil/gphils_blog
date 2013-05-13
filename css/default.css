@@ -1,6 +1,7 @@
 body {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
+    line-height: 29px;
     text-align: justify;
     color: #222222;
 }
@@ -22,6 +23,7 @@ h1.title a {
     font-size: 64px;
     font-family: 'Gochi Hand', serif;
     text-decoration: none;
+    line-height: 64px;
 }
 
 h3 {
@@ -41,6 +43,7 @@ div.about {
     height: 100%;
     width: 200px;
     font-size: 12px;
+    line-height: 15px;
 }
 
 /* div#navigation { */
