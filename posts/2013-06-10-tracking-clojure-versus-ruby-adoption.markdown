@@ -1,5 +1,5 @@
 ---
-title: Measuring Clojure vs. Ruby Adoption
+title: Tracking Clojure vs. Ruby Adoption
 author: gphil
 tags: clojure, ruby, programming, metrics
 ---
@@ -21,7 +21,7 @@ The top package on Clojars is [Ring](https://github.com/ring-clojure/ring), whic
 
 The top package on RubyGems is [Thor](https://github.com/wycats/thor) and it has been downloaded 30,235,277 times, which is ~230x more than Ring.
 
-Thor is a tool for making command line utilities and is often used as a build tool, while Ring is a web application library. The de facto build tool for Clojure is [Leiningen](https://github.com/technomancy/leiningen), which might compare more favorably to Thor. However, it is generally downloaded directly and then used to fetch dependencies from Clojars. So far as I know, no statistics are available on the number of Leiningen downloads.
+Thor is a tool for making command line utilities and is often also used as a build tool, while Ring is a web application library. The de facto build tool for Clojure is [Leiningen](https://github.com/technomancy/leiningen), which might compare more favorably to Thor. However, it is generally downloaded directly and then used to fetch dependencies from Clojars. So far as I know, no statistics are available on the number of Leiningen downloads.
 
 A more apples-to-apples comparison might be to compare Ring to [Rack](https://github.com/rack/rack), its Ruby analogue:
 
@@ -50,6 +50,6 @@ Conclusion
 
 Ruby definitely still has a major adoption and mind-share advantage over Clojure, but Clojure fared better than I thought it would on StackOverflow, and especially on GitHub.
 
-It's also interesting to note the wide range across the comparisons (400x down to 1.5x), which probably says as much about the communities they came from as well as the amount of error in this methodology (I know it's rough, but hey, it's better than nothing) as it does for Clojure versus Ruby adoption.
+It's also interesting to note the wide range across the comparisons (400x down to 1.5x), which probably says as much about the communities they came from (as well as the inaccuracy of this methodology) as it does for Clojure versus Ruby adoption in the real world.
 
 I look forward to following these numbers in order to see if Clojure makes inroads against Ruby and lowers these ratios over time.
