@@ -14,6 +14,8 @@ What follows below is an un-scientific comparison of Clojure and Ruby based on u
 
 The package repository for Clojure is [Clojars](https://clojars.org). Since its inception, it's had 4,215,857 total packages downloaded.
 
+(Edit: [@xeqixeqi](https://twitter.com/xeqixeqi) pointed out that Clojars started keeping track of downloads in Oct./Nov. 2012, so these numbers don't actually go back that far. That may explain why they are lagging Ruby by the most. RubyGems has been keeping track since July 2009.)
+
 The corresponding package repository for Ruby is [RubyGems](https://rubygems.org). RubyGems has 1,677,981,312
 total downloads. This is ~398x more than Clojars.
 
