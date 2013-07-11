@@ -51,3 +51,7 @@ div.about {
 div.twitter {
     float: left;
 }
+
+table.leiningen-downloads td {
+    padding-right: 60px;
+}
