@@ -1,16 +1,16 @@
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Oxygen', serif;
     font-size: 20px;
-    line-height: 29px;
+    line-height: 1.4;
     text-align: justify;
     color: #222222;
 }
 
 div.main {
     position: absolute;
-    top: 75px;
-    left: 280px;
-    width: 600px;
+    top: 50px;
+    left: 350px;
+    width: 720px;
     margin: 0px auto 0px auto;
 }
 
@@ -19,7 +19,7 @@ a {
 }
 
 h1.title a {
-    color: #999999;
+    color: #DDDDDD;
     font-size: 64px;
     font-family: 'Gochi Hand', serif;
     text-decoration: none;
@@ -37,24 +37,17 @@ div.copyright {
 }
 
 div.about {
+    padding-right: 65px;
+    border-right: 1px solid #DDDDDD;
     position: absolute;
     left: 30px;
     top: 50px;
     height: 100%;
-    width: 200px;
+    width: 220px;
     font-size: 12px;
     line-height: 15px;
 }
 
-/* div#navigation { */
-/*     text-align: center; */
-/*     border-bottom: 4px solid black; */
-/* } */
-
-/* div#navigation a { */
-/*     color: white; */
-/*     text-decoration: none; */
-/*     background-color: black; */
-/*     padding: 3px 10px 3px 10px; */
-/*     margin: 0px 10px 0px 10px; */
-/* } */
+div.twitter {
+    float: left;
+}

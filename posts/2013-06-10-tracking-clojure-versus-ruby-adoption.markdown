@@ -10,7 +10,8 @@ In this post I want to take a more quantitative look at the adoption of Clojure,
 
 What follows below is an un-scientific comparison of Clojure and Ruby based on usage statistics culled from their respective package repositories, StackOverflow and GitHub.
 
-<b>Package Repositories</b>
+Package Repositories
+---
 
 The package repository for Clojure is [Clojars](https://clojars.org). Since its inception, it's had 4,215,857 total packages downloaded.
 
