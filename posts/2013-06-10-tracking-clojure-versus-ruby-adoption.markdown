@@ -4,7 +4,7 @@ author: gphil
 tags: clojure, ruby, programming, metrics
 ---
 
-If you read my [previous post](2013-06-06-thoughts-on-clojure-versus-ruby-for-startups.html), then you know that I'm rooting for greater adoption of Clojure.
+If you read my [previous post](2013-06-07-thoughts-on-clojure-versus-ruby-for-startups.html), then you know that I'm rooting for greater adoption of Clojure.
 
 In this post I want to take a more quantitative look at the adoption of Clojure, and benchmark that against Ruby. I picked Ruby because it's another dynamic language that I use frequently, and because I feel that it has quite a bit of traction.
 
