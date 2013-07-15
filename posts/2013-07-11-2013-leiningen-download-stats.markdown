@@ -1,10 +1,10 @@
 ---
 title: Leiningen Download Stats
 author: gphil
-tags: clojure, ruby, programming, metrics
+tags: clojure, leiningen, metrics
 ---
 
-About a month ago, I wrote a post [comparing Ruby and Clojure adoption](2013-06-10-tracking-clojure-versus-ruby-adoption.markdown) based on package respository download stats and some other metrics.
+About a month ago, I wrote a post [comparing Ruby and Clojure adoption](2013-06-10-tracking-clojure-versus-ruby-adoption.html) based on package respository download stats and some other metrics.
 
 At the time, statistics on the number of downloads for [Leiningen](http://http://leiningen.org/) were not available. However, after the blog post was published, [Phil Hagelberg](http://technomancy.us/) (the creator of Leiningen) reached out to me letting me know that the stats could be made available if someone were to write some log parsing code to extract them.
 
