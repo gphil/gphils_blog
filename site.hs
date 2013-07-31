@@ -31,8 +31,13 @@ main = hakyll $ do
         route idRoute
         compile compressCssCompiler
 
-    -- Compress JS
+    -- Copy JS
     match "js/*" $ do
+        route idRoute
+        compile copyFileCompiler
+
+    -- Copy Fonts
+    match "fonts/*" $ do
         route idRoute
         compile copyFileCompiler
 
