@@ -41,6 +41,11 @@ main = hakyll $ do
         route idRoute
         compile copyFileCompiler
 
+    -- Copy Images
+    match "img/*" $ do
+        route idRoute
+        compile copyFileCompiler
+
     -- Build tags
     tags <- buildTags "posts/*" (fromCapture "tags/*.html")
 
@@ -93,10 +98,12 @@ main = hakyll $ do
 
     -- Index
     match "index.html" $ do
+        let title = "gphil's blog"
         route idRoute
         compile $ do
             list <- postList tags "posts/*" $ take 5 . recentFirst
-            let indexContext = constField "posts" list `mappend`
+            let indexContext = constField "title" title `mappend`
+                    constField "posts" list `mappend`
                     field "tags" (\_ -> renderTagList tags) `mappend`
                     defaultContext
 

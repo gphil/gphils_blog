@@ -3,19 +3,20 @@ body {
     font-size: 16px;
     line-height: 25px;
     text-align: left;
-    color: #222222;
+    color: #444444;
 }
 
 div.main {
     position: absolute;
-    top: 50px;
+    top: 25px;
     left: 350px;
-    width: 720px;
+    width: 580px;
     margin: 0px auto 0px auto;
 }
 
 a {
     color: #E30000;
+    text-decoration: none;
 }
 
 h1.title a {
@@ -30,6 +31,7 @@ h3 {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     font-size: 28px;
+    color: #444444;
 }
 
 div.copyright {
@@ -41,10 +43,10 @@ div.about {
     border-right: 1px solid #DDDDDD;
     position: absolute;
     left: 30px;
-    top: 50px;
+    top: 25px;
     height: 100%;
     width: 220px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 15px;
 }
 
