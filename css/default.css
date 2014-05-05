@@ -1,9 +1,8 @@
 body {
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    line-height: 25px;
     text-align: left;
-    color: #444444;
+    color: #555;
 }
 
 div.main {
@@ -15,12 +14,12 @@ div.main {
 }
 
 a {
-    color: #E30000;
+    color: rgb(179, 27, 27);
     text-decoration: none;
 }
 
 h1.title a {
-    color: #DDDDDD;
+    color: #ccc;
     font-size: 64px;
     font-family: 'Gochi Hand', serif;
     text-decoration: none;
@@ -32,6 +31,31 @@ h3 {
     font-weight: 900;
     font-size: 28px;
     color: #444444;
+}
+
+h5 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #444444;
+}
+
+.date {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: #666;
+}
+
+.emphasis {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: #666;
+}
+
+.tags {
+    line-height: 1.61em;
 }
 
 div.copyright {
@@ -47,7 +71,17 @@ div.about {
     height: 100%;
     width: 220px;
     font-size: 14px;
-    line-height: 15px;
+    line-height: 16px;
+}
+
+ul {
+    list-style: square outside;
+}
+
+div.about ul {
+    padding-left: 16px;
+    color: #666;
+    line-height: 18px;
 }
 
 div.twitter {
