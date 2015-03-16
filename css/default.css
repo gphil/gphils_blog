@@ -13,6 +13,12 @@ div.main {
     margin: 0px auto 0px auto;
 }
 
+blockquote {
+    border-left: 3px solid #ccc;
+    padding-left: 8px;
+    color: #999;
+}
+
 a {
     color: rgb(179, 27, 27);
     text-decoration: none;
