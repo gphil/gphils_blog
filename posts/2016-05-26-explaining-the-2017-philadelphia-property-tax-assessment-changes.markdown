@@ -10,13 +10,15 @@ these assessments
 [shifted a substantial amount of value from building values to land values](http://planphilly.com/articles/2016/04/20/2017-property-tax-assessments-shift-more-value-to-land),
 perhaps accurately reflecting [growing land values](http://planphilly.com/articles/2016/03/04/what-s-driving-philly-s-rising-land-values) in the city.
 
-More recently, the methodology behind this move has resulted in [some controversy](http://www.newsworks.org/index.php/essay-works/item/93495) with the general consensus being that the new 2017 land values seem to be derived from previous building values rather than the from the fundamental underlying value of the land.
+More recently, the methodology behind this move has resulted in [some controversy](http://www.newsworks.org/index.php/essay-works/item/93495) with the general consensus being that the new 2017 land values seem to be <b class="emphasis">derived from previous building values rather than the from the fundamental underlying value of the land.</b>
 
-This is a problem for a number of reasons. For one, it is an inaccurate approach because the value of what is currently built (or not) on the land has nothing to do with the underlying land value. If you are going to value the land based on the building, you might as well just only value the building.
+This is a problem for a number of reasons. For one, it is an inaccurate approach because the value of what is currently built (or not) on the land has nothing to do with the underlying land value. <b class="emphasis">If you are going to value the land based on the building, you might as well just only value the building.</b>
 
-Worse, this approach unfairly targets owners of properties with buildings having 10-year tax abatements, as that exemption pertains only to the building value and not to the land value of the property. Furthermore, these properties by have higher building values by definition (the amount of the abatement is proportional to the increased building assessment.) In effect, the city is reneging on tax abatements in this scenario.
+Worse, this approach unfairly targets owners of properties with buildings having 10-year tax abatements, as that exemption pertains only to the building value and not to the land value of the property. Furthermore, these properties by have higher building values by definition (the amount of the abatement is proportional to the increased building assessment.) <b class="emphasis">In effect, the city is partially reneging on tax abatements.</b>
 
-Because I build real estate analytics products professionally, and because I own tax-abated property in the city of Philadelphia, I couldn't help myself from doing a deeper dive into the data to see what actually transpired. It might take a little bit of patience to get through the full analysis that follows, but the short version is that the data in fact shows that, for a subset of properties, the new 2017 land values appear to in fact be derived mainly from 2016 building values. (By the way, I love digging into and discussing this kind of thing so I'm happy to answer any questions, offer advice, or just talk shop so please [get in touch!](mailto:gphil@gphil.net))
+Because I build real estate analytics products professionally, and because I own tax-abated property in the city of Philadelphia, I couldn't help myself from doing a deeper dive into the data to see what actually transpired. It might take a little bit of patience to get through the full analysis that follows, but the short version is that the data shows that, for a subset of properties, the new 2017 land values appear to in fact be derived mainly from 2016 building values.
+
+(By the way, I love digging into and discussing this kind of thing so I'm happy to answer any questions, offer advice, or just talk shop so please [get in touch!](mailto:gphil@gphil.net))
 
 OK, here we go with the data stuff:
 
