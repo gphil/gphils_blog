@@ -124,7 +124,7 @@ building value was transferred to land value. In my opinion the effect of future
 tax abatements may be less pronounced if buyers become concerned that building
 value could again be shifted to land value in the same fashion.
 
-In my opinion the most concerning aspect of this approach (where building value
+I think the most concerning aspect of this approach (where building value
 is used a proxy for land value) is that it is divorced from the actual, real-world
 drivers of land value (location and size.) This is worrisome because if the
 assessment methodology used by the OPA is not predictable, it could be
@@ -135,11 +135,12 @@ At the end of the day, I'm actually a proponent of shifting more assessed value
 to land for a number of reasons, but I think the OPA did not take the right
 approach in these assessments. I would have not touched any of the building
 values (and hence tax abatements), then conducted an independent re-evaluation
-of the fundamental land values. This approach is more difficult, and would
-affect a wider range of taxpayers than just 12,000 owners of tax abatement
+of the fundamental land values.
+
+This approach is more difficult, and would
+affect a wider range of taxpayers than just 12,000 owners of tax abated
 properties, but it is the right way to go about fixing the problem of
-under-assessed land. Instead, by partially unraveling existing tax abatements to
-in order to move more value to land, the City may have cost itself some future development.
+under-assessed land. Instead, by partially unraveling existing tax abatements to move more value to land, the City may have cost itself some future development.
 
 The obvious remaining open question is, how were the 54% of “land-shifted”
 properties selected? The city has stated that [12,000 of 15,000 tax-abated properties are in fact affected](http://www.philadelphiacontroller.org/media/press-releases/property-reassessments-could-add-30-million-in-new-revenues) so that's a start. I might dive into this topic next if there is interest, but I’ve
