@@ -10,7 +10,7 @@ these assessments
 [shifted a substantial amount of value from building values to land values](http://planphilly.com/articles/2016/04/20/2017-property-tax-assessments-shift-more-value-to-land),
 perhaps accurately reflecting [growing land values](http://planphilly.com/articles/2016/03/04/what-s-driving-philly-s-rising-land-values) in the city.
 
-More recently, the methodology behind this move has resulted in [some controversy](http://www.newsworks.org/index.php/essay-works/item/93495) with the general consensus being that the new 2017 land values seem to be <b class="emphasis">derived from previous building values rather than the from the fundamental underlying value of the land.</b>
+More recently, the methodology behind this move has resulted in [some controversy](http://www.newsworks.org/index.php/essay-works/item/93495) with the general consensus being that the new <b class="emphasis">2017 land values seem to be derived from previous building values rather than the from the fundamental underlying value of the land.</b>
 
 This is a problem for a number of reasons. For one, it is an inaccurate approach because the value of what is currently built (or not) on the land has nothing to do with the underlying land value. <b class="emphasis">If you are going to value the land based on the building, you might as well just only value the building.</b>
 
