@@ -3,19 +3,12 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Main where
 
-
 --------------------------------------------------------------------------------
-import           Control.Applicative ((<$>))
-import           Data.Monoid         (mappend, mconcat)
+import           Data.Monoid         ((<>))
 import           Prelude             hiding (id)
-import           System.Cmd          (system)
-import           System.FilePath     (replaceExtension, takeDirectory)
-import qualified Text.Pandoc         as Pandoc
-
 
 --------------------------------------------------------------------------------
 import           Hakyll
-
 
 --------------------------------------------------------------------------------
 -- | Entry point
@@ -47,7 +40,7 @@ main = hakyll $ do
         compile copyFileCompiler
 
     -- Build tags
-    tags <- buildTags "posts/*" (fromCapture "tags/*.html")
+    tags <- buildTags "posts/*"  (fromCapture "tags/*.html")
 
     -- Render each and every post
     match "posts/*" $ do
@@ -64,13 +57,13 @@ main = hakyll $ do
     create ["posts.html"] $ do
         route idRoute
         compile $ do
-            list <- postList tags "posts/*" recentFirst
+            posts <- recentFirst =<< loadAll "posts/*"
+            let ctx = constField "title" "Posts" <>
+                        listField "posts" (postCtx tags) (return posts) <>
+                        defaultContext
             makeItem ""
-                >>= loadAndApplyTemplate "templates/posts.html"
-                        (constField "title" "Posts" `mappend`
-                            constField "posts" list `mappend`
-                            defaultContext)
-                >>= loadAndApplyTemplate "templates/default.html" defaultContext
+                >>= loadAndApplyTemplate "templates/posts.html" ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
     -- Post tags
@@ -80,31 +73,32 @@ main = hakyll $ do
         -- Copied from posts, need to refactor
         route idRoute
         compile $ do
-            list <- postList tags pattern recentFirst
+            posts <- recentFirst =<< loadAll pattern
+            let ctx = constField "title" title <>
+                        listField "posts" (postCtx tags) (return posts) <>
+                        defaultContext
             makeItem ""
-                >>= loadAndApplyTemplate "templates/posts.html"
-                        (constField "title" title `mappend`
-                            constField "posts" list `mappend`
-                            defaultContext)
-                >>= loadAndApplyTemplate "templates/default.html" defaultContext
+                >>= loadAndApplyTemplate "templates/posts.html" ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
         -- Create RSS feed as well
         version "rss" $ do
             route   $ setExtension "xml"
             compile $ loadAllSnapshots pattern "content"
-                >>= return . take 10 . recentFirst
-                >>= renderAtom (feedConfiguration title) feedCtx
+                >>= fmap (take 10) . recentFirst
+                >>= renderRss (feedConfiguration title) feedCtx
 
     -- Index
     match "index.html" $ do
         let title = "gphil's blog"
         route idRoute
         compile $ do
-            list <- postList tags "posts/*" $ take 5 . recentFirst
-            let indexContext = constField "title" title `mappend`
-                    constField "posts" list `mappend`
-                    field "tags" (\_ -> renderTagList tags) `mappend`
+            posts <- fmap (take 3) . recentFirst =<< loadAll "posts/*"
+            let indexContext =
+                    constField "title" title <>
+                    listField "posts" (postCtx tags) (return posts) <>
+                    field "tags" (\_ -> renderTagList tags) <>
                     defaultContext
 
             getResourceBody
@@ -120,8 +114,8 @@ main = hakyll $ do
         route idRoute
         compile $ do
             loadAllSnapshots "posts/*" "content"
-                >>= return . take 10 . recentFirst
-                >>= renderAtom (feedConfiguration "All posts") feedCtx
+                >>= fmap (take 10) . recentFirst
+                >>= renderRss (feedConfiguration "All Posts") feedCtx
 
 --------------------------------------------------------------------------------
 postCtx :: Tags -> Context String
@@ -148,11 +142,3 @@ feedConfiguration title = FeedConfiguration
     , feedAuthorEmail = "gap023@gmail.com"
     , feedRoot        = "http://gphil.net"
     }
-
---------------------------------------------------------------------------------
-postList :: Tags -> Pattern -> ([Item String] -> [Item String])
-         -> Compiler String
-postList tags pattern preprocess' = do
-    postItemTpl <- loadBody "templates/postitem.html"
-    posts       <- preprocess' <$> loadAll pattern
-    applyTemplateList postItemTpl (postCtx tags) posts

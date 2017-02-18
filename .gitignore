@@ -4,5 +4,6 @@
 *.o
 _cache/
 _site/
+dist/
 site
 *.org
