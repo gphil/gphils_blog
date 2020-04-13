@@ -14,6 +14,9 @@ jobs:
       - run:
           name: Install netlify-cli
           command: npm install netlify-cli -g
+      -- run:
+          name: Link netlify site
+          commmand: "netlify link --name gphil"
       - restore_cache:
           # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
           name: Restore Cached Dependencies
