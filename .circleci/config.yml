@@ -14,7 +14,7 @@ jobs:
       - run:
           name: Install netlify-cli
           command: npm install netlify-cli -g
-      -- run:
+      - run:
           name: Link netlify site
           commmand: "netlify link --name gphil"
       - restore_cache:
