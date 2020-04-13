@@ -7,3 +7,5 @@ _site/
 dist/
 site
 *.org
+.stack-work/
+*.DS_Store
