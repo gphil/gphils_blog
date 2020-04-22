@@ -39,5 +39,5 @@ jobs:
 workflows:
   build:
     jobs:
-      - build
-  context: gphil.net
+      - build:
+          context: gphil.net
