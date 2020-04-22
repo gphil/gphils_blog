@@ -40,4 +40,4 @@ workflows:
   build:
     jobs:
       - build
-    context: gphil.net
+  context: gphil.net
