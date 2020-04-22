@@ -37,7 +37,7 @@ jobs:
           name: Deploy
           command: netlify deploy --dir _site/ --prod
 workflows:
-  version: 2
   build:
     jobs:
       - build
+    context: gphil.net
