@@ -3,20 +3,24 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>$title$</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Gochi Hand', 'Open Sans', 'Lato:900']
+        }
+      });
+    </script>
     <link rel="shortcut icon" href="/img/favicon.ico" />
-    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="/css/lightbox.css" />
     <link rel="stylesheet" type="text/css" href="/css/default.css" />
     <link rel="alternate"
           type="application/rss+xml"
           title="gphil's blog"
           href="/rss.xml" />
-    <script src="/js/jquery-1.10.2.min.js"></script>
-    <script src="/js/lightbox-2.6.min.js"></script>
-    <script src="/js/default.js"></script>
+    <script src="/js/combined.js">
+    </script>
+    <!-- twitter links -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   </head>
   <body>
     <div class="about">
@@ -26,7 +30,6 @@
       </p>
       <p>
         <a href="https://twitter.com/gphil" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @gphil</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </p>
       <p>
         Greg Phillips is the CTO of <a href="https://houwzer.com">Houwzer</a> where he's reimagining and reinventing real estate brokerage using a data and technology-driven approach.
@@ -47,9 +50,9 @@
       _gaq.push(['_setAccount', 'UA-34480958-1']);
       _gaq.push(['_trackPageview']);
       (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
   </body>
