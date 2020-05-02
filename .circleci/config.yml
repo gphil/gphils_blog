@@ -35,7 +35,7 @@ jobs:
       - run: stack exec site build
       - run:
           name: Deploy
-          command: netlify deploy --dir _site/ --prod
+          command: if [ $CIRCLE_BRANCH = 'master' ]; then netlify deploy --dir _site/ --prod; else netlify deploy --dir _site/; fi
 workflows:
   build:
     jobs:

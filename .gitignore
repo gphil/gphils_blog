@@ -9,3 +9,5 @@ site
 *.org
 .stack-work/
 *.DS_Store
+# Local Netlify folder
+.netlify
