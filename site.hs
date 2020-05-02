@@ -15,7 +15,7 @@ import           Hakyll
 main :: IO ()
 main = hakyll $ do
     -- Static files
-    match ("images/*" .||. "favicon.ico" .||. "files/**") $ do
+    match ("images/*" .||. "favicon.ico" .||. "files/**" .||. "admin/*") $ do
         route   idRoute
         compile copyFileCompiler
 
