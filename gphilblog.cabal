@@ -19,10 +19,4 @@ Executable site
   Hs-source-dirs: .
 
   Build-depends:
-    hakyll    >= 4.7,
-    base      == 4.*,
-    binary    >= 0.5,
-    directory >= 1.2,
-    filepath  >= 1.3,
-    pandoc    >= 1.14,
-    process   >= 1.1
+    hakyll    >= 4.7
