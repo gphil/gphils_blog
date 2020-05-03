@@ -1,0 +1,7 @@
+---
+title: Test Post
+author: gphil
+tags:
+  - another test
+---
+Another Test Post
