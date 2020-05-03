@@ -19,4 +19,5 @@ Executable site
   Hs-source-dirs: .
 
   Build-depends:
-    hakyll    >= 4.7
+    hakyll    >= 4.7,
+    base      == 4.*
