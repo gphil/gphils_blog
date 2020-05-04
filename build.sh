@@ -2,5 +2,5 @@
 wget https://get.haskellstack.org/stable/linux-x86_64.tar.gz
 tar -xvzf linux-x86_64.tar.gz
 cp stack*/stack ./stack
-./stack build
+./stack build --fast
 ./stack exec site build
